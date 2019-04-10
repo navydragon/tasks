@@ -7,10 +7,10 @@ def HowManyTimes (s,s_generic):
     for el in arr:
         if el == s:
             count = count + 1  
-    return count    
+    return count
 
 def combinations(elements, size):
-    if len(elements) == size or size == 1:
+    if len(elements) < size or size == 1:
         return elements
  
     ret = []
