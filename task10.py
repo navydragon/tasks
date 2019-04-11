@@ -6,4 +6,4 @@ def CoverWithTiles(length):
     elif length == 4:
         return 11
     else:
-        return 3 * CoverWithTiles(length - 2) + 2 * CoverWithTiles(length - 4)
+        return 4 * CoverWithTiles(length - 2) - CoverWithTiles(length - 4)
