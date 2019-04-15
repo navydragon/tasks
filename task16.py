@@ -17,4 +17,9 @@ def ShopOLAP (N, items):
     arr.append([s_name,s_kol])
     del arr[0]
     arr.sort(key=lambda x: x[1], reverse=True)
-    return arr
+    
+    arr2 = []
+    for elem in arr:
+        arr2.append(elem[0]+" "+str(elem[1]))
+    
+    return arr2
