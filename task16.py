@@ -1,11 +1,10 @@
 def ShopOLAP (N, items):
-    arr = items.split(" ")
     newList = []
-    for i in range (len(arr)):
-        if i % 2 == 1:
-            newList.append([arr[i-1],arr[i]]) 
+    for item in items:
+        elem = item.split(" ")
+        newList.append([elem[0],elem[1]])
     newList = sorted (newList)
-   
+    
     arr = []
     s_name = ""; s_kol = 0
     for el in newList:
